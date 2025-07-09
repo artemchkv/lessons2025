@@ -1,0 +1,51 @@
+/* .name {
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(65 110 189);
+  margin-right: 5px;
+} */
+body {
+  padding-left: 50px;
+}
+.feedback {
+  width: 50%;
+  margin-bottom: 25px;
+  border: 1px solid blue;
+  border-radius: 16px;
+  padding: 10px 20px;
+}
+.date {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+.text-field {
+  font-size: 15px;
+}
+.name-wrapper > span:first-child {
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(65 110 189);
+  margin-right: 5px;
+}
+
+.feedback.selected > .text-field {
+  color: red;
+}
+
+.avater {
+  width: 60px;
+  height: 60px;
+  border: 2px solid green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aqua;
+}
+.text-fieldd {
+  font-size: 18px;
+}
+#last-field {
+  font-size: 24px;
+}
