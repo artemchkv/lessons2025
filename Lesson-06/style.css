@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+
+.main-menu-wrapper > li > div {
+  width: 120px;
+  height: 44px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 2px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.main-menu-wrapper > li > div:hover {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+  font-weight: 600;
+}
+
+.sub-menu-wrapper {
+  padding-left: 0;
+}
+
+.sub-menu-wrapper > li {
+  width: 100px;
+  height: 38px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 2px;
+  border: 1px solid #000000;
+}
+
+.sub-menu-wrapper > li {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  background: rgb(226, 204, 204);
+  opacity: 0;
+}
+.sub-menu-wrapper > li:hover {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.226);
+}
+.main-menu-wrapper li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.main-menu-wrapper > li:hover > .sub-menu-wrapper > li {
+  height: 38px;
+  overflow: visible;
+  padding: 10px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.6s;
+}
+.custom-link:active {
+  color: blue;
+  font-weight: 800;
+}
+
+.main-menu-wrapper > li {
+  position: relative;
+}
+
+.sub-menu-wrapper {
+  position: absolute;
+  top: 22px;
+  left: 122px;
+}
+
+button {
+  background-color: aqua;
+}
+button:disabled {
+  background-color: blueviolet;
+}
+.main-menu-wrapper > li:first-child {
+  background-color: azure;
+}
+.main-menu-wrapper > li:nth-child(3) > div {
+  color: red;
+}
