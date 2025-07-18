@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <div>
+      <h1>Методы REST API</h1>
+      <h2>GET</h2>
+      <p>GET для получения данных. Не содержит бади, только адресная строка</p>
+      <ul>
+        Ожидаемые ответы
+        <li>500 - server error</li>
+        <li>400 - bad requesr</li>
+        <li>401 - Unauthorized</li>
+        <li>404 - Not found</li>
+        <li>403 - Forbidden</li>
+        <li>302 - Not found</li>
+        <li>304 - Not Modified</li>
+        <li>200 - Ok</li>
+        <li>201 - Created</li>
+      </ul>
+      <h2>POST</h2>
+      <p>
+        POST для создания данных. Содержит бади, но и може в адресной строке
+        содержать Query params
+      </p>
+      <h2>PATCH</h2>
+      <p>
+        PATCH для редактирования данных. Содержит бади, но и може в адресной
+        строке содержать Query params
+      </p>
+      <h2>PUT</h2>
+      <p>
+        PUT для редактирования данных. Содержит бади, но и може в адресной
+        строке содержать Query params
+      </p>
+      <h2>DELETE</h2>
+      <p>DELETE для удаление данных.</p>
+      <div>--------------------------------------------------------------</div>
+      <h3>OPTIONS</h3>
+      <p>OPTIONS для .</p>
+    </div>
+    <div class="form-wrapper">
+      <form
+        action="https://jsonplaceholder.typicode.com/posts"
+        method="post"
+        name="poster"
+        id="poster"
+      >
+        <input type="text" id="username" name="username" />
+        <label for="username">Username</label>
+        <label>
+          <span>Surname</span>
+          <input type="text" name="surname" />
+        </label>
+        <label>
+          <span>age</span>
+          <input type="number" name="age" />
+        </label>
+        <button type="reset">Reset</button>
+        <button type="submit" form="poster">Submit</button>
+      </form>
+    </div>
+    <div class="form-wrapper">
+      <form action="" method="get" name="geter" id="geter">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="username">Username</label>
+        <label>
+          <span>Surname</span>
+          <input type="text" name="surname" required />
+        </label>
+        <label>
+          <span>age</span>
+          <input type="number" name="age" placeholder="Your age" />
+        </label>
+        <select id="sex" name="sex">
+          <option>male</option>
+          <option>female</option>
+        </select>
+        <label for="sex">Sex</label>
+        <button type="reset">Reset</button>
+        <button type="submit" form="geter">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
