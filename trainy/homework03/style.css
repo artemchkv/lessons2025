@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3F4F6;
+    background-image: url(./img/rdr2_rdr2_3840x2160.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 360px;
+    min-height: 264px;
+    display: block;
+    padding: 16px 16px 14px 16px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.icon-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #C7C8D9;
+    display: inline-block;}
+
+    .survey-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h1 {
+    width: 240px;
+    height: 28px;
+    opacity: 1;
+    top: 4px;
+    left: 48px;
+    font-size: 20px;
+}
+
+label {
+    width: 77.03030395507812;
+    height: 18;
+    opacity: 1;
+    top: 48px;
+    font-size: 12px;
+    color: #555770;
+}
+
+.input-box {
+    margin-top: 16px;
+    width: 328px;
+    height: 60px;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+input {
+    padding-left: 9.94px;
+    width: 328px;
+    height: 40px;
+    border-radius: 8px;
+    top: 68px;
+    background-color: rgba(142, 144, 166, 0.16);
+    border: none;
+}
+
+::placeholder {
+    width: 157.78787231445312;
+    height: 24;
+    opacity: 1;
+    top: 76px;
+    color: rgba(142, 144, 166, 1);
+}
+
+.button_confirm {
+    border-style: none;
+    background: rgba(51, 102, 255, 1);
+    width: 96px;
+    height: 34px;
+    border-radius: 4px;
+    gap: 10px;
+    opacity: 1;
+    top: 200px;
+    left: 232px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.button_cancel {
+    width: 89px;
+    height: 34px;
+    border-style: none;
+    border-radius: 4px;
+    gap: 10px;
+    opacity: 1;
+    margin-top: 16px;
+    margin-left: 135px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    background: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    color: rgba(51, 102, 255, 1);
+    font-weight: 500;
+}
+
+.button_cancel:hover {
+    cursor: pointer;
+    background-color: rgb(228, 228, 228);
+}
+
+.button_confirm:hover {
+    cursor: pointer;
+    background-color: rgb(46, 93, 236);;
+}
