@@ -1,0 +1,13 @@
+body {padding: 50px;}
+.e {font-style: italic;
+font-size: 20px;}
+.ti {font-style: italic;
+position: relative;
+bottom: 5px;}
+.gamma {position: relative;
+top: 5px}
+.degree {position: relative;
+top: 5px;
+right: 2px;
+font-size: 12px;
+}

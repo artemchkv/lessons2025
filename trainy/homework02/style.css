@@ -1,0 +1,29 @@
+body {
+    font-family: serif;
+}
+
+ol>li>ul>li {
+    list-style-type: square;
+}
+
+li>ul>li {
+    list-style-type: circle;
+}
+
+.inf {
+    max-width: 770px;
+}
+
+table,
+th,
+td {
+    border: 2px solid;
+}
+
+.facts {
+    padding-right: 40%;
+}
+
+.index {
+    margin-bottom: 0px;
+}
