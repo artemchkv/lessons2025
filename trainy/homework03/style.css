@@ -40,12 +40,18 @@ body {
 }
 
 .close-btn {
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    border-radius: 4px;
+    left: 332px;
     position: absolute;
-    top: 12px;
-    right: 12px;
-    background: transparent;
+    top: 4px;
+    right: 4px;
+    background: whitesmoke;
     border: none;
-    font-size: 24px;
+    font-size: 12px;
     color: #555770;
     cursor: pointer;
     z-index: 3;
@@ -141,4 +147,8 @@ input {
 .button_confirm:hover {
     cursor: pointer;
     background-color: rgb(46, 93, 236);;
+}
+
+.close-btn:hover {
+    background-color: #cecece;
 }
