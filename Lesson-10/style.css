@@ -1,0 +1,48 @@
+video {
+  width: 50%;
+  height: auto;
+}
+
+dialog {
+  width: 300px;
+  height: 120px;
+}
+.top-bottom {
+  width: 10%;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  transition: all 1s 1s;
+}
+.top-bottom:hover {
+  width: 100px;
+  height: 25px;
+  transition: all 1s;
+}
+
+@keyframes hhggf {
+  from {
+    color: red;
+    font-size: 14px;
+  }
+  10% {
+    color: rgba(200, 100, 100);
+    background-color: yellow;
+    font-size: 16px;
+  }
+  100% {
+    font-weight: bold;
+    transform: translateX(50px);
+  }
+}
+.amin-name {
+  background: red;
+}
+.amin-name:hover {
+  display: inline-block;
+  animation-name: hhggf;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
