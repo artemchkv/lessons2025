@@ -1,0 +1,32 @@
+main {
+  width: 100%;
+  height: 100vh;
+}
+.container > h1 {
+  text-align: center;
+  font-size: 30px;
+  color: brown;
+}
+p {
+  display: inline-block;
+  width: 24%;
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    width: 30%;
+  }
+  .container > h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 640px) {
+  p {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 399px) {
+  p {
+    width: 100%;
+  }
+}
