@@ -2,6 +2,11 @@ main {
   width: 100%;
   height: 100vh;
 }
+
+.container {
+  margin-top: 180px;
+  width: 80%;
+}
 .container > h1 {
   text-align: center;
   font-size: 30px;
@@ -22,11 +27,23 @@ p {
 }
 @media screen and (min-width: 400px) and (max-width: 640px) {
   p {
-    width: 49%;
+    width: 49vw;
   }
 }
 @media screen and (max-width: 399px) {
   p {
     width: 100%;
   }
+}
+.rounded {
+  width: 3.91vw;
+  height: 3.91vw;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: tomato;
+  font-size: 2.28vw;
+  font-weight: bold;
 }
