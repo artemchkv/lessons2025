@@ -14,7 +14,7 @@ div {
   padding: 0;
 }
 
-/* .item1 {
+.item1 {
   grid-column: 2 / -2;
   grid-row: 1 / 2;
   background-color: blueviolet;
@@ -24,4 +24,4 @@ div {
     grid-column: 1 / -1;
     grid-row: -1 / -2;
   }
-} */
+}
