@@ -1,0 +1,7 @@
+E:\repos\C#Lesson01\bin\Debug\C#Lesson01.exe.config
+E:\repos\C#Lesson01\bin\Debug\C#Lesson01.exe
+E:\repos\C#Lesson01\bin\Debug\C#Lesson01.pdb
+E:\repos\C#Lesson01\obj\Debug\C#Lesson01.csproj.AssemblyReference.cache
+E:\repos\C#Lesson01\obj\Debug\C#Lesson01.csproj.CoreCompileInputs.cache
+E:\repos\C#Lesson01\obj\Debug\C#Lesson01.exe
+E:\repos\C#Lesson01\obj\Debug\C#Lesson01.pdb

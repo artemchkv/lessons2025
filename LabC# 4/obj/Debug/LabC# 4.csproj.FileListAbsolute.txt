@@ -1,0 +1,7 @@
+E:\repos\LabC# 4\bin\Debug\LabC# 4.exe.config
+E:\repos\LabC# 4\bin\Debug\LabC# 4.exe
+E:\repos\LabC# 4\bin\Debug\LabC# 4.pdb
+E:\repos\LabC# 4\obj\Debug\LabC# 4.csproj.AssemblyReference.cache
+E:\repos\LabC# 4\obj\Debug\LabC# 4.csproj.CoreCompileInputs.cache
+E:\repos\LabC# 4\obj\Debug\LabC# 4.exe
+E:\repos\LabC# 4\obj\Debug\LabC# 4.pdb
