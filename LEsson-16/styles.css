@@ -1,0 +1,20 @@
+.header-top {
+  color: #183318;
+}
+.description {
+  color: #183318;
+}
+.main_menu-item {
+  width: 50px;
+  height: 50px;
+  background-color: #a7d6a7;
+}
+.main_menu-item--selected {
+  font-weight: 700;
+  font-size: 20px;
+  color: red;
+}
+.main_menu-item:hover {
+  background-color: #cae6ca;
+  color: #000000;
+}
