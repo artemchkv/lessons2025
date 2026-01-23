@@ -4,6 +4,12 @@
 .description {
   color: #183318;
 }
+.main {
+  background-color: #62b562;
+  color: #081008;
+  font-size: 18px;
+  line-height: 1.6;
+}
 .main_menu-item {
   width: 50px;
   height: 50px;
@@ -17,4 +23,46 @@
 .main_menu-item:hover {
   background-color: #cae6ca;
   color: #000000;
+}
+.triangle {
+  width: 1px;
+  height: 1px;
+  border: 30px solid transparent;
+  border-top: 30px solid red;
+}
+.with-triangle:after {
+  content: '';
+  width: 1px;
+  height: 1px;
+  border: 30px solid transparent;
+  border-top: 30px solid red;
+}
+.card-icon-lightning {
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9f9ff1;
+}
+.card-icon-secure {
+  color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ff19f;
+}
+.card-icon-team {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f19f9f;
 }

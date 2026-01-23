@@ -4,22 +4,68 @@
   color: @base-color;
 }
 
-.description{ 
-  color: @base-color
+.description {
+  color: @base-color;
 }
 
-.main_menu-item {
-  width: 50px;
-  height: 50px;
-  background-color: lighten(@base-color, 60%);
+.main {
+  background-color: lighten(@base-color, 40%);
+  color: darken(@base-color, 10%);
+  font-size: 18px;
+  line-height: 1.6;
+  &_menu-item {
+    width: 50px;
+    height: 50px;
+    background-color: lighten(@base-color, 60%);
     &--selected {
       font-weight: 700;
       font-size: 20px;
-      color: red
+      color: red;
     }
     &:hover {
       background-color: lighten(@base-color, 70%);
       color: darken(@base-color, 20%);
     }
+  }
 }
 
+.triangle {
+  width: 1px;
+  height: 1px;
+  border: 30px solid transparent;
+  border-top: 30px solid red;
+}
+
+.with-triangle {
+  &:after {
+    content: '';
+    .triangle;
+  }
+}
+@lightning: rgb(159, 159, 241);
+@secure: rgb(159, 241, 159);
+@team: rgb(241, 159, 159);
+
+.card-icon(@color) {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @color;
+}
+
+.card-icon-lightning {
+  color: white;
+  .card-icon(@lightning);
+}
+
+.card-icon-secure {
+  color: red;
+  .card-icon(@secure);
+}
+
+.card-icon-team {
+  .card-icon(@team);
+}
