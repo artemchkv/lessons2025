@@ -12,3 +12,5 @@ https://sass-guidelin.es/ru/#section
         "savePath": "/css"
     }
 ],
+
+https://colorscheme.ru/color-names.html
