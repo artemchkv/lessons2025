@@ -31,17 +31,18 @@ console.log('first element', array[1]);
 var obj = {'first name': 'Yevhenii'};
 console.log('first element', obj['first name']);
 
-var obj1 = {firstName: 'Yevhenii', secondName: 'Chukavov'};
+var obj1 = {secondName: 'Chukavov', 'firstName': 'Yevhenii', 0: {isObj: true, name: 'inner obj'}, };
 console.log('first element', obj1.firstName);
 console.log(typeof obj1);
 
 var newOnj = {...obj1};
 obj1.secondName = 'JKHjkhjkhjklh'
-console.log('first element', newOnj);
+console.log('elements newOnj', newOnj);
 
 function user(name) {
   var newName = name + ' ' + 'Chukavov';
   return newName;
 }
 
-console.log('User:', user('Yevhenii'), typeof user);
+var pro = confirm('User:', user('Yevhenii'));
+console.log("🚀 ~ pro:", pro)
