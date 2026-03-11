@@ -31,7 +31,7 @@ console.log('first element', array[1]);
 var obj = {'first name': 'Yevhenii'};
 console.log('first element', obj['first name']);
 
-var obj1 = {secondName: 'Chukavov', 'firstName': 'Yevhenii', 0: {isObj: true, name: 'inner obj'}, };
+var obj1 = {secondName: 'Chukavov', 'firstName': 'Yevhenii', 0: {isObj: true, name: 'inner obj'}, 'login': 'Yevhenii',};
 console.log('first element', obj1.firstName);
 console.log(typeof obj1);
 
