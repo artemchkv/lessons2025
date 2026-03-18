@@ -50,6 +50,54 @@
 // var result = str === newArray;
 // console.log('🚀 ~ result:', result);
 
-var array6 = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-var result = array6.indexOf('casmel');
+var array6 = [
+  'ant',
+  'bison',
+  'camel',
+  'duck',
+  true,
+  'elephant',
+  { name: 'Artem', surname: 'Cukavov', apartment: 22 },
+  { name: 'Yevhenii', surname: 'Cukavov', apartment: 21 },
+  { name: 'Anna', surname: 'Cukavoff', apartment: 24 },
+  { name: 'Nika', surname: 'Cukavoff', apartment: 21 },
+];
+var array7 = [
+  { name: 'Artem', surname: 'Cukavov', apartment: 22 },
+  { name: 'Yevhenii', surname: 'Cukavov', apartment: 21 },
+  { name: 'Anna', surname: 'Cukavoff', apartment: 24 },
+  { name: 'Nika', surname: 'Cukavoff', apartment: 21 },
+];
+// var result = array6.indexOf(true);
+// console.log('🚀 ~ result:', result);
+
+// console.log('Find item:', array6[result]);
+
+// function finder(name) {
+//   return name
+// }
+// finder('Yevhenii')
+// var finder = (name) => {
+//   return name;
+// }
+
+array6.push({
+  name: 'Barsik',
+  surname: 'Cat',
+  apartment: 21,
+  createdAt: Date.now(),
+});
+
+var result = array6.find(
+  // (i) => i?.surname === 'Cukavoff' && i?.apartment === 21
+  (i) => i?.surname === 'Cukavoff' || i?.apartment === 21,
+);
 console.log('🚀 ~ result:', result);
+
+var result2 = array6.filter((element) => element?.apartment !== 24);
+console.log('🚀 ~ result2:', result2);
+
+var result3 = array7.map((el) => {
+  return el.name;
+});
+console.log('🚀 ~ result3:', result3);
