@@ -16,3 +16,5 @@ https://sass-guidelin.es/ru/#section
 https://colorscheme.ru/color-names.html
 
 https://nodejs.org/en
+
+https://learn.javascript.ru/regexp-quantifiers
