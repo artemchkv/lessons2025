@@ -18,3 +18,5 @@ https://colorscheme.ru/color-names.html
 https://nodejs.org/en
 
 https://learn.javascript.ru/regexp-quantifiers
+
+https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets

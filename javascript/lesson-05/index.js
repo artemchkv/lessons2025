@@ -33,3 +33,12 @@ if (obj.name === 'Yevhenii') {
 } else {
   console.log('Not enout name');
 }
+
+var strr = '"kjjhkhjhlk": {"kjjkh": kljklj, "lkjkljlj": jkjkhkjhkljh}';
+var obj11 = { kjjhkhjhlk: { kjjkh: 'kljklj', lkjkljlj: 'jkjkhkjhkljh' } };
+
+var json = JSON.stringify(obj11);
+console.log('strr:', json);
+
+var parsedJson = JSON.parse(json);
+console.log('parsedJson', parsedJson);
