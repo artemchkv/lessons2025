@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 10 DOM BOM</title>
+</head>
+
+<body>
+  <div id="container"></div>
+  <script>
+    var container = document.getElementById("container");
+    container.innerHTML = "<span class='text''>Абра-кадабра!</span>";
+
+    var text = document.querySelector("span.text");
+    text.style.fontSize = "30px";
+    var colorArrey = ["red", "green", "blue", "yellow", "purple"];
+    var index = 0;
+    var interval = setInterval(function () {
+      index++;
+      if (index >= colorArrey.length) {
+        index = 0;
+      }
+      text.style.color = colorArrey[index];
+      text.style.transition = "color 1s ease";
+    }, 2000);
+
+    var newEl = document.createElement("p");
+    newEl.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas"
+    newEl.style.textAlign = "center";
+    newEl.style.fontSize = "20px";
+    newEl.style.marginTop = "40px";
+
+    document.body.appendChild(newEl);
+    console.log('This location host:', location.host);
+    console.log('This location pathname:', location.pathname);
+    console.log('This location search:', location.search);
+
+
+  </script>
+</body>
+
+</html>

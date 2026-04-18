@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <span id="span1">span1
+      <span id="span2">Щелкните здесь (span2)</span>
+    </span>
+  </div>
+
+  <script type="text/javascript">
+    function f_click(e) {
+      console.log(this.getAttribute("id") + ". Событие возникло в " + e.target.getAttribute("id"));
+    }
+    if (document.addEventListener) {
+      var span1 = document.getElementById("span1");
+      var span2 = document.getElementById("span2");
+      span1.addEventListener("click", f_click, true);
+      span2.addEventListener("click", f_click, false);
+    }
+  </script>
+</body>
+
+</html>

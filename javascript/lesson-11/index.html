@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Event</title>
+</head>
+
+<body>
+  <h1>Events</h1>
+  <h2>On click</h2>
+  <input type="text" name="login" class="btn-onclick">
+  <!-- <p id='mes' onmouseover='textChange()' onmouseout='textReturn()'>Наведите на
+    þтот текст курсор мüùи.</p> -->
+  <script>
+    var login = 'Enter your Login'
+    var elementInput = document.querySelector('.btn-onclick');
+    elementInput.value = login;
+    elementInput.onchange = (event) => {
+      console.log('event:', event.target.name, event.target.value);
+      login = event.target.value.toUpperCase();
+      document.querySelector('.btn-onclick').value = login;
+      console.log('Input:', document.querySelector('.btn-onclick').value);
+
+    }
+
+    // function textChange() {
+    //   console.log('textChange');
+    //   var sorce = document.getElementById('mes');
+    //   sorce.innerText = 'Спасибо за наведение!';
+    // }
+    // function textReturn() {
+    //   console.log('textReturn');
+    //   var sorce = document.getElementById('mes');
+    //   sorce.innerText = 'Наведите на þтот текст курсор мüùи.';
+    // }
+  </script>
+</body>
+
+</html>
