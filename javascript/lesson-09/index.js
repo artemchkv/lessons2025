@@ -66,9 +66,9 @@ class Wild extends Animal {
 
 var dog = new Pet('Dog', 'Sharik', 20, 4, 'John');
 dog.say();
-dog.sayOwner();
+dog.sayOwner();``
 
-var tiger = new Wild('Tiger', 'Sherkhan', 60, 4, undefined, 'High');
+var tiger = new Wild('Tiger', 'Sherkhan', 60, 4, 'Africa', 'High');
 
 tiger.say();
 console.log('I live in: ', tiger.animalsArea);
