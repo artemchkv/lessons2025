@@ -1,11 +1,23 @@
-var sentences = [
-  prompt("Первая фраза: "),
-  prompt("Вторая фраза: "),
-  prompt("Третья фраза: ")
+var static = ['static', 'static', 'static'];
+var sentences = [];
+
+var promtArray = [
+  'Первая фраза: ',
+  'Вторая фраза: ',
+  'Третья фраза: ',
+  'Четвертая фраза: ',
+  'Пятая фраза: ',
 ];
-var static = ["static", "static", "static"];
+
+for (var i = 0; i < promtArray.length; i++) {
+  var data = prompt(promtArray[i]);
+  if (data) {
+    sentences.push(data);
+  }
+}
+console.log('array: ', sentences);
 
 var result = sentences.concat(static);
 
 var resultString = result.join('').length;
-alert("Длина строки: " + resultString);
+alert('Длина строки: ' + resultString);
