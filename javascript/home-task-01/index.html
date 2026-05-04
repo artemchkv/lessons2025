@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Sex
-    </title>
+    <title>Input Sex</title>
 </head>
+
 <body>
     <h1>Enter your sex</h1>
+    <label for="inputObj"></label>
     <input type="text" id="inputObj">
     <button onclick="submit()">Submit</button>
     <script>
         function submit() {
-    var inputObj = document.getElementById('inputObj');
-    var value = inputObj.value.trim().toLowerCase();
-    if (value === "man" || value === "woman") {
-        alert("Your sex is: " + value);
-    } else {
-        alert("Ошибка! Введите 'man' или 'woman'.");
+            var inputObj = document.getElementById('inputObj');
+            var value = inputObj.value.trim().toLowerCase();
+            if (value === "man" || value === "woman") {
+                alert("Your sex is: " + value);
+            } else {
+                alert("Ошибка! Введите 'man' или 'woman'.");
+            }
         }
-    }
     </script>
 </body>
+
 </html>
