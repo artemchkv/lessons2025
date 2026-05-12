@@ -1,0 +1,3 @@
+# Ignore homework tasks to prevent Copilot assistance for learning
+/javascript/home-task-*
+/javascript/hometask-*
