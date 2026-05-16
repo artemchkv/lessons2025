@@ -1,50 +1,22 @@
-// var text = 'I have 1 apple, 2 oranges and 3 bananas and 1 pear.';
+var arr1 = ['first', 2, 'second', 'third', 'third', 85, 'secondary', 100, 'firster', 2];
+var arr2 = ['secondary', 'firster', 85, 'third', 100, 'second', 2];
+var finalArray = [];
+var memored = [];
 
-// var result = text
-//   .replace(/1/g, 'one')
-//   .replaceAll('2', 'two')
-//   .replaceAll('3', 'three');
+for (var i = 0; i < arr1.length; i++) {
+    var item = arr1[i];
+        if (arr2.includes(item) && !memored.includes(item)) {
+    memored.push(item);
 
-// console.log(result);
-
-// var string = 'hello MY name is, JavaScript and I like your: code styLe';
-
-// var clearString = string.replaceAll(/[:.,]/g, '');
-// console.log('🚀 ~ clearString:', clearString);
-// var words = clearString.split(' ');
-// console.log('🚀 ~ words:', words);
-
-// for (let i = 0; i < words.length; i++) {
-//   let word = words[i];
-// }
-
-// words.forEach((word, index) => {
-//   console.log('🚀 ~ word:', word);
-
-// });
-
-// var result = words
-//   .map((el) => {
-//     var isChanged = /[A-Z]/.test(el);
-//     if (isChanged) {
-//       var str = el
-//         .split('')
-//         .map((letter) =>
-//           /[A-Z]/.test(letter) ? letter.toLowerCase() : letter.toUpperCase(),
-//         )
-//         .join('');
-//       return str;
-//     } else {
-//       return el;
-//     }
-//   })
-//   .join(' ');
-// console.log('🚀 ~ result:', result);
-
-function fun(name, ...rest) {
-  console.log('🚀 ~ fun ~ rest:', rest);
-  return name + rest.reduce((acc, el) => acc + el, 0);
+    if (typeof item === 'number' && item % 5 === 0) {
+        finalArray.push('FIVE');
+        } 
+    else if (typeof item === 'string' && item.length > 5) {
+        finalArray.push('FSTR');
+        } 
+    else {
+        finalArray.push(item);
+        }
+    }
 }
-
-const result = fun('Artem', 1, 2, 3, 4, 5, 10);
-console.log('🚀 ~ result:', result);
+console.log(finalArray);
