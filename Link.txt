@@ -20,3 +20,7 @@ https://nodejs.org/en
 https://learn.javascript.ru/regexp-quantifiers
 
 https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+https://mockapi.io/
+
+https://web.postman.co/home
