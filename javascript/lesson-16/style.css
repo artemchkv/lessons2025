@@ -16,3 +16,20 @@
   height: 50px;
   object-fit: contain;
 }
+.fetch-list {
+  margin-bottom: 24px;
+}
+.add-author {
+}
+#add-author-form {
+  display: flex;
+  gap: 8px;
+  min-width: 200px;
+  padding-top: 24px;
+  align-items: center;
+}
+.author-input {
+  flex-basis: 100px;
+  height: 20px;
+  padding: 2px 4px;
+}
