@@ -1,16 +1,16 @@
 class Student {
-    #name;
-    #course;
+  #name;
+  #course;
 
-    constructor(name, course) {
-        this.#name = name;
-        this.#course = course;
-    }
+  constructor(name, course) {
+    this.#name = name;
+    this.#course = course;
+  }
 
-    showinfo = () => {
-        console.log(`Student name: ${this.#name}, course: ${this.#course}`);
-    }
+  showinfo = () => {
+    console.log(`Student name: ${this.#name}, course: ${this.#course}`);
+  };
 }
 
-var student1 = new Student("John", "Second");
+var student1 = new Student('John', 'Second');
 student1.showinfo();

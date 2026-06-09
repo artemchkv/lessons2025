@@ -33,3 +33,26 @@
   height: 20px;
   padding: 2px 4px;
 }
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: space-evenly;
+  & button {
+    height: 32px;
+    min-width: 60px;
+    padding: 4px 8px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  & .delete-btn {
+    background-color: red;
+    color: white;
+  }
+  & .edit-btn {
+    background-color: blue;
+    color: white;
+  }
+}

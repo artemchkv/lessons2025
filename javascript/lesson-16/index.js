@@ -25,11 +25,32 @@
 const baseUrl = 'https://6a08b0d9e7e3f433d482c478.mockapi.io/api/';
 const getListUrl = 'v1/author';
 const addAuthorUrl = 'v1/author';
+const deleteAuthorUrl = 'v1/author';
+
+async function deleteAuthor(id) {
+  console.log('🚀 ~ deleteAuthor ~ id:', id);
+  try {
+    const response = await fetch(`${baseUrl}${deleteAuthorUrl}/${id}`, {
+      method: 'DELETE',
+    });
+    console.log('🚀 ~ deleteAuthor ~ response:', response);
+    if (!response.ok) {
+      throw new Error(`HTTP error ${response.status}`);
+    }
+    const rowForDelete = document.querySelector(`.table-row[data-id="${id}"]`);
+    if (rowForDelete) {
+      rowForDelete.remove();
+    }
+  } catch (error) {
+    console.error('Error fetching deleteAuthor:', error);
+  }
+}
 
 const listCreator = (data) => {
   data.forEach((element) => {
     var div = document.createElement('div');
     div.className = 'table-row';
+    div.dataset.id = element.id;
     const array = Object.entries(element);
     for (const [key, value] of array) {
       if (key === 'avatar') {
@@ -45,6 +66,21 @@ const listCreator = (data) => {
         div.appendChild(divItem);
       }
     }
+    const actionCell = document.createElement('div');
+    actionCell.className = 'table-row-item actions';
+    actionCell.innerHTML = `<button class="edit-btn">Edit</button>
+    <button class="delete-btn">Delete</button>`;
+
+    actionCell.querySelector('.delete-btn').addEventListener('click', () => {
+      deleteAuthor(element.id);
+    });
+
+    actionCell.querySelector('.edit-btn').addEventListener('click', () => {
+      console.log('Edit author', element.id);
+      // TODO: открыть форму редактирования
+    });
+
+    div.appendChild(actionCell);
     document.getElementById('root').appendChild(div);
   });
 };
@@ -110,3 +146,4 @@ addAuthorForm.addEventListener('submit', function (event) {
   const avatar = addAuthorForm.querySelector('[name="avatar"]').value;
   addAuthor(name, avatar);
 });
+// CRUD - Create, Read, Update, Delete

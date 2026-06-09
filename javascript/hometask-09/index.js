@@ -1,25 +1,31 @@
-class first {
-    run() {
-        console.log('run');
-    }
-    go() {
-        console.log('go');
-    }
-    say() {
-        console.log('say');
-    }
+class First {
+  run() {
+    console.log('run');
+  }
+  go() {
+    console.log('go');
+  }
+  say() {
+    console.log('say');
+  }
 }
 
-class second {
-    run() {
-        console.log('second');
-    }
-    go() {
-        console.log('second');
-    }
+class Second {
+  run() {
+    console.log('second');
+  }
+  go() {
+    console.log('second');
+  }
 }
 
-class third {
-    static createobj() {
-    }
+class Third {
+  static createobj(name) {
+    return new name();
+  }
 }
+
+const first = Third.createobj(Second);
+first.run();
+first.go();
+// first.say();
