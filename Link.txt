@@ -24,3 +24,5 @@ https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snipp
 https://mockapi.io/
 
 https://web.postman.co/home
+
+https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log
