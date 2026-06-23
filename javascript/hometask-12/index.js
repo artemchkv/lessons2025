@@ -17,37 +17,64 @@ infotext.addEventListener('dblclick', function () {
 
 var tabletitle = document.createElement('p');
 tabletitle.textContent = 'Индекс Биг Мака в разных странах';
-tabletitle.classList.add('table-title');
+tabletitle.className = 'table-title';
 document.body.appendChild(tabletitle);
 
-var table = document.createElement('div');
-table.classList.add('table-wrapper');
-table.appendChild(document.createElement('p')).textContent = 'Страна';
-table.lastChild.classList.add('country');
-table.appendChild(document.createElement('p')).textContent = 'Цена';
-table.lastChild.classList.add('price');
+var table = document.createElement('table');
+table.className = 'table-wrapper';
+var thead = [
+  'Год',
+  'Украина',
+  'США',
+  'Великобритания',
+  'Израиль'
+];
+thead.forEach(item => {
+  var th = document.createElement('th');
+  th.className = 'table-element';
+  th.textContent = item;
+  table.appendChild(th);
+});
+
+var tbody = document.createElement('tbody');
+var rows = [
+  ['2012', '5.20', '5.05', '3.80', '6.50'],
+  ['2013', '5.40', '5.20', '4.00', '6.80'],
+  ['2014', '5.60', '5.40', '4.20', '7.10']
+];
+rows.forEach(row => {
+  var tr = document.createElement('tr');
+  row.forEach(element => {
+    var td = document.createElement('td');
+    td.className = 'table-element';
+    td.textContent = element;
+    tr.appendChild(td);
+  });
+  tbody.appendChild(tr);
+});
+table.appendChild(tbody);
+
 document.body.appendChild(table);
 
-var facts = document.createElement('h3');
-facts.textContent = 'Интересные факты:';
+var facttitle = document.createElement('p');
+facttitle.textContent = 'Интересные факты';
+facttitle.className = 'fact-title';
+document.body.appendChild(facttitle);
+var facts = document.createElement('ol');
+var factarray = [
+  'Индекс Биг Мака был впервые опубликован в 1986 году журналом The Economist.',
+  'Индекс Биг Мака используется для оценки покупательной способности валют разных стран и уровня жизни в этих странах.',
+  'Индекс Биг Мака позволяет сравнивать стоимость жизни и уровень инфляции в разных странах.',
+];
+
+facts.className = 'facts';
+factarray.forEach(item => {
+  var li = document.createElement('li');
+  li.textContent = item;
+  li.className = 'fact';
+  facts.appendChild(li);
+});
+
 document.body.appendChild(facts);
-
-var fact1 = document.createElement('p');
-fact1.textContent =
-  '1. Индекс Биг Мака был впервые опубликован в 1986 году журналом The Economist. С тех пор он стал популярным инструментом для анализа экономической ситуации в разных странах.';
-fact1.classList.add('fact');
-document.body.appendChild(fact1);
-
-var fact2 = document.createElement('p');
-fact2.textContent =
-  '2. Индекс Биг Мака используется для оценки уровня жизни и покупательной способности валют разных стран. Он позволяет сравнивать стоимость жизни в разных странах и оценивать, насколько валюты недооценены или переоценены по отношению к доллару США.';
-fact2.classList.add('fact');
-document.body.appendChild(fact2);
-
-var fact3 = document.createElement('p');
-fact3.textContent =
-  '3. Индекс Биг Мака может быть использован для оценки уровня инфляции в разных странах. Если стоимость Биг Мака в одной стране растет быстрее, чем в другой, это может указывать на более высокую инфляцию в первой стране.';
-fact3.classList.add('fact');
-document.body.appendChild(fact3);
 
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table
