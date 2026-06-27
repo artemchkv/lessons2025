@@ -1,5 +1,6 @@
 var title = document.createElement('h1');
 title.textContent = 'Индекс Биг Мака';
+title.style.color = 'blue';
 document.body.appendChild(title);
 
 var infotext = document.createElement('p');
@@ -8,11 +9,14 @@ infotext.textContent =
 infotext.className = 'info-text';
 document.body.appendChild(infotext);
 
+var count = 0;
 infotext.addEventListener('click', function () {
-  infotext.classList.add('info-text-color');
-});
-infotext.addEventListener('dblclick', function () {
-  infotext.classList.remove('info-text-color');
+  var colors = ['red', 'green', 'blue', 'orange', 'purple'];
+  count++;
+  if (count < colors.length) {
+    title.style.color = colors[count];
+  }
+  infotext.classList.toggle('info-text-color');
 });
 
 var tabletitle = document.createElement('p');
@@ -22,14 +26,8 @@ document.body.appendChild(tabletitle);
 
 var table = document.createElement('table');
 table.className = 'table-wrapper';
-var thead = [
-  'Год',
-  'Украина',
-  'США',
-  'Великобритания',
-  'Израиль'
-];
-thead.forEach(item => {
+var thead = ['Год', 'Украина', 'США', 'Великобритания', 'Израиль'];
+thead.forEach((item) => {
   var th = document.createElement('th');
   th.className = 'table-element';
   th.textContent = item;
@@ -40,11 +38,11 @@ var tbody = document.createElement('tbody');
 var rows = [
   ['2012', '5.20', '5.05', '3.80', '6.50'],
   ['2013', '5.40', '5.20', '4.00', '6.80'],
-  ['2014', '5.60', '5.40', '4.20', '7.10']
+  ['2014', '5.60', '5.40', '4.20', '7.10'],
 ];
-rows.forEach(row => {
+rows.forEach((row) => {
   var tr = document.createElement('tr');
-  row.forEach(element => {
+  row.forEach((element) => {
     var td = document.createElement('td');
     td.className = 'table-element';
     td.textContent = element;
@@ -68,7 +66,7 @@ var factarray = [
 ];
 
 facts.className = 'facts';
-factarray.forEach(item => {
+factarray.forEach((item) => {
   var li = document.createElement('li');
   li.textContent = item;
   li.className = 'fact';
