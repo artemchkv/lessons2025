@@ -1,0 +1,90 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+}
+
+.name-input
+{
+    margin-left: 10px;
+    height: 20px;
+    border: 2px solid #515f6d;
+    border-radius: 5px;
+    background-color: #cac8e9;
+}
+
+.name-input:focus
+{
+    outline: none;
+    border-color: #465052;
+    box-shadow: 0 0 5px #308050;
+}
+
+.surname-input
+{
+    margin-left: 10px;
+    height: 20px;
+    border: 2px solid #515f6d;
+    border-radius: 5px;
+    background-color: #cac8e9;
+}
+
+.surname-input:focus
+{
+    outline: none;
+    border-color: #465052;
+    box-shadow: 0 0 5px #308050;
+}
+
+.age-input
+{
+    margin-left: 10px;
+    height: 20px;
+    border: 2px solid #515f6d;
+    border-radius: 5px;
+    background-color: #cac8e9;
+}
+
+.age-input:focus
+{
+    outline: none;
+    border-color: #465052;
+    box-shadow: 0 0 5px #308050;
+}
+
+.add-button
+{
+    margin-left: 10px;
+    height: 24px;
+    border: 2px solid #308050;
+    border-radius: 5px;
+    background-color: #81e4a9;
+}
+
+.add-button:hover
+{
+    background-color: #6cd18f;
+}
+
+.show-button
+{
+    margin-left: 10px;
+    height: 24px;
+    border: 2px solid #89ad6b;
+    border-radius: 5px;
+    background-color: #cbeeaf;
+}
+
+.show-button:hover
+{
+    background-color: #b0e29a;
+}
+
+.delete-button
+{
+    margin-left: 10px;
+    height: 30px;
+    border: 2px solid #353b42;
+    border-radius: 5px;
+    background-color: #f18e8e;
+}
